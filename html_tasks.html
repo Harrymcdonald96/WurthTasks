@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tasks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>HTML Tasks</h1>
+    <nav>
+      <a href="html_tasks.html">HTML </a>
+      <a href="css_tasks.html">CSS </a>
+      <a href="js_tasks.html">JavaScript </a>
+      <a href="bonus_task.html">Bonus Task </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Task 1: Difference between <div> and <section> -->
+      <section id="task-1">
+        <h2>Task 1: Difference Between Div and Section</h2>
+        <p>This task explains the difference between a <strong>div</strong> and a <strong>section</strong>:</p>
+        <ul>
+          <li><strong>Div:</strong> A generic container for grouping elements without providing any semantic meaning.</li>
+          <li><strong>Section:</strong> A semantic container used to group related content with meaningful structure.</li>
+        </ul>
+        <p>Here is an example that demonstrates the difference:</p>
+        <pre><code>
+          
+      <!-- Example of Div: Generic Grouping -->
+      <div class="content-wrapper">
+        <div class="title">Blog Title</div>
+        <div class="text">This is a blog post about web development.</div>
+      </div>
+      
+      <!-- Example of Section: Semantic Grouping -->
+      <section>
+        <header>
+          <h1>Blog Title</h1>
+        </header>
+        <p>This is a blog post about web development.</p>
+      </section>
+        </code></pre>
+        <p><strong>Explanation:</strong></p>
+        <ul>
+          <li>The first example uses generic div elements to group content. It is functional but does not provide additional meaning.</li>
+          <li>The second example uses a section element to group related content semantically, improving accessibility and SEO.</li>
+        </ul>
+      </section>
+      
+
+
+    <!-- Task 2: Create a Form -->
+    <section id="task-2">
+      <h2>Task 2: Create a Form</h2>
+      <p>This task showcases a basic form with username and password fields:</p>
+      <form action="/submit" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Task 3: Difference between Ordered and Unordered Lists -->
+    <section id="task-3">
+      <h2>Task 3: Difference Between Ordered and Unordered Lists</h2>
+      <p>This task explains the difference between ordered and unordered lists:</p>
+      <ul>
+        <li>Ordered List: Creates a list with numbered items.</li>
+        <li>Unordered List: Creates a list with bullet points.</li>
+      </ul>
+      <pre><code>
+Ordered List Example:
+1. First item
+2. Second item
+3. Third item
+
+Unordered List Example:
+- Item one
+- Item two
+- Item three
+      </code></pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My HTML Tasks</p>
+  </footer>
+</body>
+</html>

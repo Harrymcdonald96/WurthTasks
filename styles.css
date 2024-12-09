@@ -1,0 +1,214 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #cc0000; /* Red background for headers */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+header nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #cc0000; /* Red background for footers */
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+main {
+  padding: 20px;
+  margin-bottom: 60px; /* To avoid overlap with footer */
+}
+
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 14px;
+  color: #333;
+  margin-top: 0;
+}
+
+section ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+section ul li {
+  margin: 5px 0;
+  list-style-type: disc;
+}
+
+/* Task-Specific Styles for HTML Tasks */
+/* Example containers */
+.example-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Content wrapper for Task 1 */
+.content-wrapper {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.content-wrapper .title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.content-wrapper .text {
+  font-size: 14px;
+  text-align: justify;
+  margin: 0;
+}
+
+/* Styling for Task 2 form */
+form label {
+  font-weight: bold;
+  margin-top: 10px;
+  display: block; /* Ensures labels appear on their own line */
+}
+
+form input {
+  width: 100%; /* Make inputs responsive */
+  max-width: 500px; /* Limit input width to prevent excessive stretching */
+  padding: 10px; /* Add consistent padding */
+  margin-bottom: 15px; /* Add spacing between fields */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+form button {
+  background-color: #0093dd;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #007bb5;
+}
+/* Task-Specific Styles for CSS Tasks */
+/* Styled button for Task 4 */
+.custom-button {
+  background-color: #0093dd;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.custom-button:hover {
+  background-color: #11e23e;
+}
+
+/* Positioning examples for Task 5 (Updated Layout) */
+.positioning-examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+  gap: 15px;
+}
+
+.positioning-example {
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.positioning-example.relative {
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.positioning-example.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Responsive design for Task 6 */
+.responsive-element {
+  width: 50%;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: #e6f7ff;
+  text-align: center;
+  border: 1px solid #b3e0ff;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .responsive-element {
+    width: 25%;
+  }
+}
+
+/* Adjustments for smaller devices */
+@media (max-width: 600px) {
+  .content-wrapper .text,
+  section p {
+    font-size: 10px; /* Smaller text for better responsiveness */
+    line-height: 1.4; /* Adjust line spacing */
+  }
+
+  .responsive-element {
+    width: 50%;
+  }
+}
+
+#myDiv {
+  background: lightgray;
+  padding: 10px;
+  margin-top: 10px;
+  display: block; /* Ensure it starts visible */
+}

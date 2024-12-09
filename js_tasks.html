@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Tasks</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>JavaScript Tasks</h1>
+    <nav>
+      <a href="html_tasks.html">HTML </a>
+      <a href="css_tasks.html">CSS </a>
+      <a href="js_tasks.html">JavaScript </a>
+      <a href="bonus_task.html">Bonus Task </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Task 1: Reverse a String -->
+    <section id="task-1">
+      <h2>Task 1: Reverse a String</h2>
+      <p>This task demonstrates a JavaScript function to reverse a string:</p>
+      <input type="text" id="stringInput" placeholder="Enter a string">
+      <button id="reverseButton">Reverse String</button>
+      <p id="reversedString">Reversed string will appear here.</p>
+    </section>
+
+    <!-- Task 2: == vs === Explanation -->
+    <section id="task-2">
+      <h2>Task 2: == vs === in JavaScript</h2>
+      <p>These are comparison operators used to evaluate whether two values are equal.</p>
+      <h3>1. == (Equality Operator)</h3>
+      <p>Checks if two values are equal in value, allowing type conversion if necessary. Also called a "loose equality" operator.</p>
+      <h3>2. === (Strict Equality Operator)</h3>
+      <p>Checks if two values are equal in both value and type. Does not allow type conversion.</p>
+      <h3>Key Difference</h3>
+      <p>The main difference between <code>==</code> and <code>===</code> is whether type conversion (also known as coercion) is allowed:</p>
+      <ul>
+        <li><code>==</code> does allow type conversion, so values of different types may be considered equal if they can be converted to the same type.</li>
+        <li><code>===</code> does not allow type conversion, so values must have the same type to be considered equal.</li>
+      </ul>
+      <h3>Examples</h3>
+      <p>The examples for <code>==</code> and <code>===</code> are logged in the console. Open your browser's developer tools (usually accessible with <code>F12</code> or <code>Ctrl+Shift+I</code>) and navigate to the "Console" tab to view the results.</p>
+     
+      <h3>When to Use == vs ===</h3>
+      <ul>
+        <li><strong>Prefer <code>===</code>:</strong> Use strict equality (<code>===</code>) to avoid unexpected behavior caused by type conversion.</li>
+        <li><strong>Use <code>==</code>:</strong> Only when you intentionally want to allow type conversion, and you're certain it won't introduce bugs.</li>
+      </ul>
+    </section>
+
+    <!-- Task 3: Toggle Visibility -->
+    <section id="task-3">
+      <h2>Task 3: Toggle Visibility</h2>
+      <p>This task demonstrates toggling the visibility of an element using JavaScript:</p>
+      <button id="toggleButton">Toggle Visibility</button>
+      <div id="myDiv">This is a toggleable div.</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 My JavaScript Tasks</p>
+  </footer>
+</body>
+</html>
